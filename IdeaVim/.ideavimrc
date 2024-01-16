@@ -1,0 +1,30 @@
+set scrolloff=5
+set number
+set relativenumber
+set ignorecase
+set incsearch
+set hlsearch
+set clipboard+=unnamedplus
+set showmode
+
+" ====== ( Plugs ) ====== "
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
+
+" ====== ( Windows navigation & split ) ====== "
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-s> <C-w>s
+nmap <C-v> <C-w>v
+map <c-=> <Action>(StretchSplitToTop)
+map <c--> <Action>(StretchSplitToBottom)
+map <c-,> <Action>(StretchSplitToLeft)
+map <c-.> <Action>(StretchSplitToRight)
+nmap <C-q> :close<cr>
+
+nmap <C-t> :NERDTreeToggle<cr>
